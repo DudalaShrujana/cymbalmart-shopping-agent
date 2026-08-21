@@ -1,0 +1,68 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #FAF9F6;
+    color: #3D3D3D;
+  }
+
+  h1, h2, h3, .font-serif-heading {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+  }
+}
+
+/* Custom Natural Tones theme helpers */
+.bg-natural-bg {
+  background-color: #FAF9F6;
+}
+.bg-natural-card {
+  background-color: #FFFFFF;
+}
+.bg-natural-muted {
+  background-color: #F3F2EE;
+}
+.bg-natural-subtle {
+  background-color: #F9F8F6;
+}
+.bg-natural-sage {
+  background-color: #7C8B71;
+}
+.bg-natural-olive {
+  background-color: #2D332A;
+}
+
+.text-natural-dark {
+  color: #2D332A;
+}
+.text-natural-body {
+  color: #3D3D3D;
+}
+.text-natural-muted {
+  color: #8B8881;
+}
+.text-natural-sage {
+  color: #7C8B71;
+}
+.text-natural-sage-dark {
+  color: #5A6354;
+}
+
+.border-natural-border {
+  border-color: #E8E6E1;
+}
+.border-natural-stone {
+  border-color: #D1D1CB;
+}
+
+@media print {
+  body {
+    background-color: #ffffff !important;
+    color: #000000 !important;
+  }
+  header, nav, .print\:hidden, button:not(.print\:inline-block) {
+    display: none !important;
+  }
+}
